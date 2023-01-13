@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: url('back.png'); */
+  font-family: "Montserrat", sans-serif;
+}
+.entero {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 122, 116, 0.51) 0%,
+    rgba(0, 0, 0, 0.51) 33%,
+    rgba(0, 0, 0, 0.51) 66%,
+    rgba(0, 122, 116, 0.51) 100%
+  );
+}
+
+.rovoard {
+  width: 75%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.rovoardhead {
+  background-color: rgba(12, 12, 12, 0.478);
+  box-shadow: 0 0 10px 0 rgba(12, 12, 12, 0.478);
+  border-radius: 0.5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 1vw;
+  align-items: center;
+}
+
+.rovoardrobos, .rovoardhead, .rovoardusers, .jobs {
+  margin-bottom: 0.51vw;
+}
+
+.titulo, .ads {
+  color: #39ffa0;
+  font-weight: 700;
+  font-size: 1.5vw;
+  text-shadow: 0 0 10px #39ffa0;
+  text-align: right;
+}
+.subtitle {
+  color: #fff;
+  font-size: 0.61vw;
+}
+
+.robosdis {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.51rem;
+  max-height: 7vw;
+  overflow-y: auto;
+}
+.inforobo {
+  padding: 1vw;
+  margin-bottom: 0.51vw;
+  background-color: rgba(12, 12, 12, 0.478);
+  box-shadow: 0 0 10px 0 rgba(12, 12, 12, 0.478);
+  border-radius: 0.5vw;
+}
+
+.inforobo .text {
+  font-weight: 800;
+  font-size: .6vw;
+  padding-right: 0.2rem;
+  color: #fff;
+}
+
+.usersonline {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 800;
+  font-style: italic;
+  font-size:2vw;
+  text-shadow: 0 0 10px #39ffa0;
+  padding-bottom:1.2vw;
+}
+
+.rovoardusers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.51rem;
+  max-height: 15vw;
+  overflow-y: auto;
+}
+
+.nombreuser {
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.rovoardusers .user {
+  background-color: rgba(12, 12, 12, 0.478);
+  box-shadow: 0 0 10px 0 rgba(12, 12, 12, 0.478);
+  border-radius: 0.5vw;
+  padding: 0.61vw;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iduser {
+  border-bottom: 2px solid #39ffa0;
+  min-width: 1.6rem;
+  font-weight: 800;
+  padding: 0.21rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgb(0 255 106);
+}
+
+.msnumber {
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding-right: 0.2rem;
+}
+
+.msverde {
+  text-shadow: 0 0 10px rgb(0 255 106);
+}
+.msamarillo {
+  text-shadow: 0 0 10px rgb(255, 230, 0);
+}
+.msrojo {
+  text-shadow: 0 0 10px rgb(255 0 43);
+}
+
+.msusers {
+  
+  font-weight: 300;
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.jobs {
+display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  max-height: 6.9vw;
+  overflow-y: auto;
+}
+
+.jobs > div {
+
+  background-color: rgba(12, 12, 12, 0.478);
+  box-shadow: 0 0 10px 0 rgba(12, 12, 12, 0.478);
+  border-radius: 0.5vw;
+  padding: 0.61vw;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobs .jobcolor {
+  border-left: 2px solid rgb(0, 255, 106);
+  text-shadow: 0 0 10px rgb(0, 255, 106);
+    flex: 0 0 calc(19.66% - 10px);
+    color: white;
+    margin: 0.51rem;
+}
+
+.jobs .number {
+  font-weight: 300;
+  color: #ffffff75;
+}
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 1vw;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
